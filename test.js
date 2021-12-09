@@ -25,4 +25,10 @@ const c = () => {
     })
 }
 
-a().then(ret => b()).then(ret => c())
+const main = async () => {
+    await a()
+    await b()
+    await c()
+}
+
+main()
